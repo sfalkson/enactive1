@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+    <header>
+        <title> Sara's DALL-E App</title>
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </header>
+
+    <body>
+        <!-- Header with hardcoded api key --> 
+        <p>Sara's custom web app for dallllll-E!</p>
+
+        <div>
+            Let's create a social story! <input id="api-key"
+            value="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">
+        </div>
+
+
+        <fieldset>
+            <legend> Social Story request</legend>
+
+            <!-- Text box description --> 
+        <textarea id="text-prompt" rows="4" cols="52">What would you like to write a social story about? </textarea>
+
+       <div>
+        <!-- number of images generated --> 
+        Images in social story (1-4): <input id="image-count" value="1">
+        </div>
+
+        <!-- Radio buttons --> 
+        <div>
+            Image size: 
+        </div>
+
+        <!-- Option 256 --> 
+        <div>
+            <input type="radio" ids="radio-256" name="image-size" value="256" checked>
+            <label fore="256">256</label>
+        </div>
+
+        <!-- Option 512 (unchecked) --> 
+        <div>
+            <input type="radio" ids="radio-512" name="image-size" value="512">
+            <label fore="512">512</label>
+        </div>
+
+         <!-- Option 1024 (unchecked)--> 
+         <div>
+            <input type="radio" ids="radio-1024" name="image-size" value="1024">
+            <label fore="1024">1024</label>
+        </div>
+
+        <!-- Button--> 
+        <div>
+            <button id="button-request">Get social story!</button>
+        </div>
+        </fieldset>
+
+        <div>
+        <fieldset>
+            <legend>Request status</legend>
+            <div>
+                <p id="request-status" > No story prompted yet </p>
+            </div>
+        </fieldset>
+
+        </div>
+
+         <!-- Images will go here --> 
+        <fieldset>
+            <legend>Generated story images</legend>
+            <div id="image-container"></div>
+    
+        </fieldset>
+
+
+        
+        <script type="text/javascript" src="js/script.js" ></script>
+    </body>
+</html>

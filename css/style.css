@@ -1,0 +1,25 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+
+    font-size: 18px;
+}
+
+/* hide the API key */ 
+#api-key {
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+}
+
+.target-text { 
+    font-weight: 900;
+}
+
+fieldset{
+    margin-bottom: 20px;
+
+}
+
+#button-request {
+    margin-top: 20px; /* button spacing */
+}
